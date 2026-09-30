@@ -14,7 +14,7 @@ int main()
 	cout << "x = "; cin >> x;
 	cout << "y = "; cin >> y;
 	// розгалуження в повній формі 
-	if ((x * x + (y - R) * (y - R) <= R * R) ||
+	if (((x + R) * (x + R) + (y - R) * (y - R) <= R * R) ||
 		(x >= 0 && x <= 2 * R && y >= -R && y <= 0))
 		cout << "yes" << endl;
 	else
